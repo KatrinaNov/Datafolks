@@ -43,12 +43,20 @@
   &-img
     height: 100%;
     object-fit: cover
+  &__button
+    transition: opacity 0.5s
+    opacity: 0
 
 @media screen and ( max-width: 767px )
   .card
     max-width: 500px
 
-  
+
+@media (hover: hover) and (pointer: fine) 
+  .card
+    &:hover
+      .card__button
+        opacity: 1
 
 
 
