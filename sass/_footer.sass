@@ -1,0 +1,128 @@
+.footer 
+  background-color: #0c1c28
+  padding: rem(32px) 0 rem(97px)
+  &__container 
+    width: 90%
+    max-width: 1450px
+    margin: 0 auto
+  &__wrap
+    display: flex 
+    align-items: start
+    justify-content: flex-end  
+  &__left
+    flex-basis: 43%
+  &__contacts
+    display: flex
+    align-items: start
+    flex-wrap: wrap
+  &__title 
+    font-size: rem(45px)
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: -1.13px
+    margin-top: rem(46px)
+    margin-bottom: rem(60px)
+  &__text 
+    display: block
+    max-width: 355px
+    margin-bottom: rem(18px)
+    font-family: "Myriad Pro", sans-serif
+    letter-spacing: -0.45px
+    line-height: 24px
+  &__contact 
+    flex: 0 0 100%
+    margin-bottom: rem(30px)
+  &__phones
+    padding-right: rem(74px)    
+  &__phone
+    display: block
+    font-family: "Myriad Pro", sans-serif
+    font-size: rem(30px)
+    letter-spacing: -0.75px
+    line-height: 40px
+    color: inherit
+  &__links
+    padding-left: rem(40px)
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 3px
+      height: 105px
+      background-color: #0058a7
+      display: block
+  &__link
+    display: block
+    color: #3d95e3
+    font-family: "Myriad Pro"
+    letter-spacing: -0.45px
+    margin-top: 10px
+  &__form
+    max-width: 556px
+    margin-left: rem(40px)
+    padding: rem(38px)
+    border: 5px solid rgba(84, 102, 130, 0.33)
+    flex-grow: 1
+  &__input
+    background-color: rgba(84, 102, 130, 0.33)
+    color: inherit
+    border: none
+    margin-bottom: 2px
+    padding: rem(27px) rem(36px)
+    font-size: rem(15px)
+    font-weight: 500
+    letter-spacing: -0.48px
+    &::placeholder
+      color: inherit
+      opacity: 0.84
+  &__policy
+    color: #4c89c1
+    font-size: rem(14px)
+    font-weight: 500
+    text-decoration: underline
+    letter-spacing: -0.35px
+    display: inline-block
+    margin: 7px 0 15px
+  &__btn
+    padding: rem(15px) rem(62px)
+
+@media (max-width: 1445px)
+  .footer
+    &__left
+      flex-basis: 60%
+    &__form
+      margin-left: 0
+      margin-top: 30px
+
+@media (max-width: 840px)
+  .footer
+    &__wrap
+      flex-direction: column
+    &__form
+      width: 100%
+    
+@media (max-width: 567px)   
+  .footer
+    text-align: center 
+    &__contacts
+      flex-basis: 100%
+      justify-content: center
+    &__text
+      text-align: center
+      max-width: 100%   
+    &__links  
+      padding-left: 15px
+      text-align: left
+@media screen and ( max-width: 400px )
+  .footer
+    &__phones
+      padding-right: 15px
+    &__phone
+      font-size: 16px
+      line-height: 28px
+    &__links
+      &::before
+        height: 80px
+  

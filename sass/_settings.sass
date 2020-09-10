@@ -1,0 +1,32 @@
+$root-font-size: 18px
+
+@function rem($size) 
+  @return $size / $root-font-size * 1rem
+* 
+  box-sizing: border-box
+html 
+  font-size: $root-font-size
+body 
+  font-family: 'DIN Pro', sans-serif
+  font-weight: 400
+.button
+  font-size: inherit
+  font-weight: 700
+  text-transform: uppercase
+  letter-spacing: -0.45px
+
+@media (max-width: 1200px) 
+  $root-font-size: 16px
+  html 
+    font-size: $root-font-size
+
+@media (max-width: 990px) 
+  $root-font-size: 14px
+  html 
+    font-size: $root-font-size
+
+
+@media (max-width: 567px) 
+  $root-font-size: 12px
+  html 
+    font-size: $root-font-size
